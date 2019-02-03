@@ -1,0 +1,71 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/dassiorleando/.nvm/v6.11.3/bin/node',
+1 verbose cli   '/Users/dassiorleando/.nvm/v6.11.3/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'arangojs' ]
+2 info using npm@3.10.10
+3 info using node@v6.11.3
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData arangojs
+8 silly fetchNamedPackageData arangojs
+9 silly mapToRegistry name arangojs
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'arangojs',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'arangojs',
+12 silly mapToRegistry   name: 'arangojs',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/arangojs
+14 verbose request uri https://registry.npmjs.org/arangojs
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 1:26:13 PM
+17 verbose request id a8e906f190325ac0
+18 http request GET https://registry.npmjs.org/arangojs
+19 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+20 info attempt registry request try #2 at 1:26:53 PM
+21 http request GET https://registry.npmjs.org/arangojs
+22 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+23 info attempt registry request try #3 at 1:28:23 PM
+24 http request GET https://registry.npmjs.org/arangojs
+25 silly fetchPackageMetaData Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+25 silly fetchPackageMetaData     at errnoException (dns.js:28:10)
+25 silly fetchPackageMetaData     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:76:26)
+25 silly fetchPackageMetaData  error for arangojs { Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+25 silly fetchPackageMetaData     at errnoException (dns.js:28:10)
+25 silly fetchPackageMetaData     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:76:26)
+25 silly fetchPackageMetaData   code: 'ENOTFOUND',
+25 silly fetchPackageMetaData   errno: 'ENOTFOUND',
+25 silly fetchPackageMetaData   syscall: 'getaddrinfo',
+25 silly fetchPackageMetaData   hostname: 'registry.npmjs.org',
+25 silly fetchPackageMetaData   host: 'registry.npmjs.org',
+25 silly fetchPackageMetaData   port: 443 }
+26 silly rollbackFailedOptional Starting
+27 silly rollbackFailedOptional Finishing
+28 silly runTopLevelLifecycles Finishing
+29 silly install printInstalled
+30 verbose stack Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+30 verbose stack     at errnoException (dns.js:28:10)
+30 verbose stack     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:76:26)
+31 verbose cwd /Users/dassiorleando/projects/opensource/alibabacloud/arangodbjs-example
+32 error Darwin 17.7.0
+33 error argv "/Users/dassiorleando/.nvm/v6.11.3/bin/node" "/Users/dassiorleando/.nvm/v6.11.3/bin/npm" "install" "--save" "arangojs"
+34 error node v6.11.3
+35 error npm  v3.10.10
+36 error code ENOTFOUND
+37 error errno ENOTFOUND
+38 error syscall getaddrinfo
+39 error network getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+40 error network This is most likely not a problem with npm itself
+40 error network and is related to network connectivity.
+40 error network In most cases you are behind a proxy or have bad network settings.
+40 error network
+40 error network If you are behind a proxy, please make sure that the
+40 error network 'proxy' config is set properly.  See: 'npm help config'
+41 verbose exit [ 1, true ]
